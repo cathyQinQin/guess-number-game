@@ -1,4 +1,5 @@
 //console.log('The secret is loaded');
+// teacher: kingston.fung.gmail.com
 /*
     1. As the page loads, we need to 'wire up' the buttons
     2. Also, prepare a random number as the game starts
@@ -81,7 +82,7 @@ const updateUIWithStatus = function(status){
     bottomBoarder.classList.add(status);
     statusText.classList.add(status);
     // attempsText.textContent = attempsText.textContent.replace('{x}',window.attempts);
-    const attempsSentence = `You tried ${window.attempts} times ${window.attempts === 1 ? '':'s'}`;
+    const attempsSentence = `You tried ${window.attempts} time${window.attempts === 1 ? '':'s'}`;
     attempsText.textContent = attempsSentence;
 
     if (status === 'win'){
